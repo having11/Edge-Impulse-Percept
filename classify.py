@@ -82,7 +82,7 @@ async def main(argv):
     # This function will run when the count is not correct
     async def send_alert(lug_nut_count: int):
         msg = Message("Found {0} missing lug nuts!"
-            .format(cli_args.count - lug_nut_count))
+            .format(count - lug_nut_count))
         msg.message_id = uuid.uuid4()
         msg.custom_properties["counted"] = lug_nut_count
         msg.content_type = "application/json"

@@ -73,7 +73,7 @@ $ sudo python3 classify.py <path_to_model.eim> <Camera port ID, only required wh
 
 where `<LUG_NUT_COUNT>` is the correct number of lug nuts that should be attached to the wheel. There are several other flags that can be set to control things like viewing camera output + bounding boxes and the camera port, so just run
 
-```
+```bash
 $ sudo python3 classify.py <path_to_model.eim> <Camera port ID, only required when more than 1 camera is present> -c <LUG_NUT_COUNT>
 ```
 
